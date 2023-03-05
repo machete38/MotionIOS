@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="248-V7-Qsw">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-j2-PiL">
-                                <rect key="frame" x="43" y="334" width="289" height="60"/>
+                                <rect key="frame" x="43" y="378" width="289" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pL1-JE-5PX"/>
@@ -26,17 +27,17 @@
                                     <color key="titleColor" red="0.094117647058823528" green="0.086274509803921567" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0fo-BR-DDe" kind="presentation" customClass="SegueFromRight" customModule="Motion" customModuleProvider="target" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="OLE-gz-lKq"/>
+                                    <segue destination="0fo-BR-DDe" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="OLE-gz-lKq"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown-1" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-tS-ceS">
-                                <rect key="frame" x="-12.666666666666657" y="103" width="400.33333333333326" height="150"/>
+                                <rect key="frame" x="-12.666666666666657" y="147" width="400.33333333333326" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="57C-Bp-5vZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN2-Hx-Rpi">
-                                <rect key="frame" x="43" y="421" width="289" height="60"/>
+                                <rect key="frame" x="43" y="465" width="289" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ywp-fm-Ktk"/>
@@ -45,7 +46,7 @@
                                     <color key="titleColor" red="0.094117647060000004" green="0.086274509799999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Puc-A8-yum" kind="presentation" customClass="SegueFromRight" customModule="Motion" customModuleProvider="target" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="t96-NZ-2X0"/>
+                                    <segue destination="Puc-A8-yum" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="t96-NZ-2X0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
+            <point key="canvasLocation" x="810" y="867"/>
         </scene>
         <!--Register-->
         <scene sceneID="SRp-k2-spp">
@@ -110,7 +111,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.094117647060000004" green="0.086274509799999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -125,13 +126,23 @@
                                 </constraints>
                                 <color key="textColor" red="0.094117647060000004" green="0.086274509799999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6Q-I6-4Rg">
+                                <rect key="frame" x="120" y="572" width="134" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="0fo-BR-DDe" eventType="touchUpInside" id="bwg-B3-B7g"/>
+                                    <segue destination="2dY-mH-iZ9" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="44a-nZ-eoP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wQC-Rc-LHn"/>
                         <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -159,7 +170,7 @@
                         <outlet property="email" destination="cui-8L-0gI" id="YL7-pN-VRm"/>
                         <outlet property="password" destination="DGE-Ri-7D8" id="NFX-wb-ZGq"/>
                         <outlet property="username" destination="773-C3-iVC" id="hpw-1p-xLD"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="swipeRight2" id="RSj-lS-Ixj"/>
+                        <segue destination="248-V7-Qsw" kind="show" identifier="swipeRight2" id="RSj-lS-Ixj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXs-WZ-d50" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="1564" y="-536.45320197044339"/>
         </scene>
-        <!--Login-->
+        <!--Login View Controller-->
         <scene sceneID="rTD-1k-2PM">
             <objects>
-                <viewController id="Puc-A8-yum" customClass="Login" customModule="Motion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Puc-A8-yum" customClass="LoginViewController" customModule="Motion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygF-nu-seM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +196,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя пользователя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWS-mS-e4Q">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWS-mS-e4Q">
                                 <rect key="frame" x="43" y="212" width="289" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -193,14 +204,14 @@
                                 </constraints>
                                 <color key="textColor" red="0.094117647060000004" green="0.086274509799999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-1H-5Dg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-1H-5Dg">
                                 <rect key="frame" x="43" y="297" width="289" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -208,13 +219,22 @@
                                 </constraints>
                                 <color key="textColor" red="0.094117647060000004" green="0.086274509799999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-EF-CPD">
+                                <rect key="frame" x="163" y="422" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Puc-A8-yum" eventType="touchUpInside" id="JtJ-uX-Rwc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KO0-oV-x6f"/>
                         <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,23 +260,85 @@
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="swipeRight" id="oqN-k7-eEu"/>
+                        <outlet property="loginButton" destination="e9u-EF-CPD" id="BIC-59-BLv"/>
+                        <outlet property="passwordTextField" destination="XoA-1H-5Dg" id="uhp-Xd-1t2"/>
+                        <outlet property="usernameTextField" destination="HWS-mS-e4Q" id="308-fc-6GA"/>
+                        <segue destination="2dY-mH-iZ9" kind="presentation" identifier="seg1" modalPresentationStyle="fullScreen" id="3wj-HH-gA7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed3-fz-Mv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="oIQ-SU-AUk">
                     <connections>
-                        <action selector="siwpeRight:" destination="Puc-A8-yum" id="vcR-xp-sxK"/>
+                        <action selector="swipeRight:" destination="Puc-A8-yum" id="FjP-Zq-PcX"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1519" y="513"/>
+            <point key="canvasLocation" x="2594" y="622"/>
+        </scene>
+        <!--App-->
+        <scene sceneID="TXn-Dg-Ze9">
+            <objects>
+                <viewController storyboardIdentifier="testcontroller" title="App" id="2dY-mH-iZ9" customClass="testcontrollerViewController" customModule="Motion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Sj-Wy-06Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ТЕСТОВОЕ ОКНО ДЛЯ РЕГИ И ЛОГИНА" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m09-s7-eL1">
+                                <rect key="frame" x="39" y="345" width="296" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7l-ho-vbJ">
+                                <rect key="frame" x="112" y="387" width="151" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BACK TO START"/>
+                                <connections>
+                                    <segue destination="248-V7-Qsw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="CYb-Av-4sU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x0F-61-QGA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jkB-73-BqU"/>
+                    <connections>
+                        <outlet property="back2startbutton" destination="z7l-ho-vbJ" id="t3d-4t-hyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCa-Ga-6Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3852" y="8.8669950738916263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JAz-Qu-0So">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="248-V7-Qsw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5cE-dG-bv8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xlf-R4-9t8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CCh-AE-9lk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZX6-G3-Zzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oqN-k7-eEu"/>
+        <segue reference="RSj-lS-Ixj"/>
+        <segue reference="3wj-HH-gA7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Unknown-1" width="400" height="400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

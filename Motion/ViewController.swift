@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var Login: UIButton!
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         Login.layer.cornerRadius = 10
         Register.layer.cornerRadius  = 10
-    
+        // Initialize Firebase
         // Do any additional setup after loading the view.
         
     }
