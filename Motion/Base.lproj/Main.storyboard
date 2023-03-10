@@ -251,7 +251,7 @@
                             <constraint firstItem="HWS-mS-e4Q" firstAttribute="leading" secondItem="KO0-oV-x6f" secondAttribute="leading" constant="43" id="lnS-1d-0Zk"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="oIQ-SU-AUk" appends="YES" id="OP7-5a-KzP"/>
+                            <outletCollection property="gestureRecognizers" destination="9wB-TO-LmE" appends="YES" id="fYq-05-nrE"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hRI-FF-oFO">
@@ -264,14 +264,11 @@
                         <outlet property="passwordTextField" destination="XoA-1H-5Dg" id="uhp-Xd-1t2"/>
                         <outlet property="usernameTextField" destination="HWS-mS-e4Q" id="308-fc-6GA"/>
                         <segue destination="2dY-mH-iZ9" kind="presentation" identifier="seg1" modalPresentationStyle="fullScreen" id="3wj-HH-gA7"/>
+                        <segue destination="248-V7-Qsw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="TOI-xl-f7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed3-fz-Mv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="oIQ-SU-AUk">
-                    <connections>
-                        <action selector="swipeRight:" destination="Puc-A8-yum" id="FjP-Zq-PcX"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="9wB-TO-LmE"/>
             </objects>
             <point key="canvasLocation" x="2594" y="622"/>
         </scene>
@@ -318,7 +315,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5cE-dG-bv8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xlf-R4-9t8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -332,7 +329,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RSj-lS-Ixj"/>
+        <segue reference="TOI-xl-f7A"/>
         <segue reference="3wj-HH-gA7"/>
     </inferredMetricsTieBreakers>
     <resources>

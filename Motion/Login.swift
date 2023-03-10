@@ -8,9 +8,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // свайп налево
+        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureAction))
+       leftSwipeGesture.direction = .left //тут указано налево но оно работает только когда свайп вправо 
+            view.addGestureRecognizer(leftSwipeGesture)
+        
     }
-    
-    
+
+   @objc func swipeGestureAction() {
+       let transition = CATransition()
+       transition.duration = 0.2
+       transition.type = .push
+       transition.subtype = .fromLeft
+       view.window?.layer.add(transition, forKey: kCATransition)
+       dismiss(animated: false, completion: nil)
+   }
+
+
+
     
    @IBAction func loginButtonTapped(_ sender: Any) {
        guard let email = usernameTextField.text, !email.isEmpty else {
@@ -43,6 +58,7 @@ class LoginViewController: UIViewController {
            print("User logged in successfully!")
        }
    }
+   
 
 }
 
