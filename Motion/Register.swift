@@ -16,6 +16,17 @@ class Register: UIViewController, UITextFieldDelegate {
         email.delegate = self
         username.delegate = self
         password.delegate = self
+        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureAction))
+       leftSwipeGesture.direction = .right //тут указано налево но оно работает только когда свайп вправо
+            view.addGestureRecognizer(leftSwipeGesture)
+    }
+    @objc func swipeGestureAction() {
+        let transition = CATransition()
+        transition.duration = 0.27
+        transition.type = .reveal
+        transition.subtype = .fromLeft
+        view.window?.layer.add(transition, forKey: kCATransition)
+        dismiss(animated: false, completion: nil)
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {

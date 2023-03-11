@@ -163,6 +163,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="jQU-1P-Fdn" appends="YES" id="yfS-aQ-rnM"/>
+                            <outletCollection property="gestureRecognizers" destination="mXl-Yh-TOM" appends="YES" id="e4H-r2-md0"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Eke-ez-6kh"/>
@@ -179,6 +180,7 @@
                         <action selector="rightSwipe:" destination="0fo-BR-DDe" id="Tt1-VL-Z6q"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="mXl-Yh-TOM"/>
             </objects>
             <point key="canvasLocation" x="1564" y="-536.45320197044339"/>
         </scene>
@@ -315,7 +317,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5cE-dG-bv8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xlf-R4-9t8">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -329,8 +331,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TOI-xl-f7A"/>
-        <segue reference="3wj-HH-gA7"/>
+        <segue reference="RSj-lS-Ixj"/>
+        <segue reference="44a-nZ-eoP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Unknown-1" width="400" height="400"/>
